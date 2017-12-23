@@ -32,5 +32,3 @@ deploy:
     - "dist/linux64/*.rpm"
   skip_cleanup: true
   all_branches: true
-  on:
-    tags: true
