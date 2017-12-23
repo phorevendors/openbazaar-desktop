@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = function (grunt) {
+module.exports = function setup(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
