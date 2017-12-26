@@ -9,6 +9,8 @@ cache:
   - "/usr/local/Cellar"
 node_js:
 - '6'
+before_script:
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then "./.travis/add-key.sh" ; fi
 script:
 - npm run lint
 - npm run test
@@ -18,17 +20,20 @@ deploy:
   api_key: "$GITHUB_TOKEN"
   file_glob: true
   file:
-    - "dist/win32/*.exe"
-    - "dist/win32/*.nupkg"
-    - "dist/win32/RELEASES"
-    - "dist/win64/*.exe"
-    - "dist/win64/*.nupkg"
-    - "dist/win64/RELEASES-x64"
-    - "dist/osx/*.dmg"
-    - "dist/osx/*.zip"
-    - "dist/linux32/*.deb"
-    - "dist/linux64/*.deb"
-    - "dist/linux32/*.rpm"
-    - "dist/linux64/*.rpm"
+  - dist/win32/*.exe
+  - dist/win32/*.nupkg
+  - dist/win32/RELEASES
+  - dist/win64/*.exe
+  - dist/win64/*.nupkg
+  - dist/win64/RELEASES-x64
+  - dist/osx/*.dmg
+  - dist/osx/*.zip
+  - dist/linux32/*.deb
+  - dist/linux64/*.deb
+  - dist/linux32/*.rpm
+  - dist/linux64/*.rpm
   skip_cleanup: true
   all_branches: true
+env:
+  global:
+  - secure: QOLIgDAmXZab6HZHnZK0wrbhoblEY7A8ddVK34dm+/lIxtt0E504O+xidsSgKSUJhehHSlBwd9TlI01AIuznBlfSCq9pvzaM/F+ppidN4mk6XE0ymFJMgpS5E2+CGiz1/CpOLK2GkF3Mf1nOHLNDL3UvysE60cZcqwZV+lL8kI+Z61TUy7JfK6Ev77WIheuumVIm3ybnVH5vPdkLVi/nxR1qL3xPB7HVC/fZF7s1D3qaMijO1rK0pHBvgQ7JCF09Bq6WyEdTITlsXfY5ttMi7Szfu6NuiXtn646jsGeVOswCUR18BlzjWNUgrvmfqPhY6FMaKRe0L+tTlNkoZKixLQ2PrvRlpY/9PdTrjXh6izOnzzXY5AqFW7Tt3tAAU8y3LLOoMeUn4cB7rtqr2X5q1T75yTp61H6kTMUDX2nmXWCKMgcu4QtciW5rC1LCvU2FN5Y2WE+wlFyiqMw85krmFt8PHMsi+NRVGAFaI5CMRoi8eFXK9mZeUgDe1wFKPSyvElerE+NCc7pKSTVJxkFLdV/htHo6MGYXKxGQOVwN9CJjDKlKN6pd5u/7PLq7vp+5LaVpefKzJQZvFZy9x39aP0H2yOsDeNKROfmbOc/k3/1lCVGYiisPeVxLNrth9b0c1mBEg3bqWv0aLa329mP/YjQeOjlqFsBkSfeEoxdO7yw=
