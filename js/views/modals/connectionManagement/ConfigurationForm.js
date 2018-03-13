@@ -57,6 +57,7 @@ export default class extends baseVw {
       'click .js-saveConfirmCancel': 'onClickSaveConfirmCancel',
       'change #serverConfigServerIp': 'onChangeServerIp',
       'change [name=useTor]': 'onChangeUseTor',
+      'change [name=useSSH]': 'onChangeUseSSH'
     };
   }
 
@@ -133,6 +134,11 @@ export default class extends baseVw {
       .toggleClass('hide', !e.target.checked);
   }
 
+  onChangeUseSSH(e) {
+    this.getCachedEl('.js-sshDetails')
+      .toggleClass('hide', !e.target.checked);
+  }
+  
   save() {
     const formData = this.getFormData(this.$formFields);
     this.model.set({
