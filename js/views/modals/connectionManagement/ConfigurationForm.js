@@ -57,7 +57,9 @@ export default class extends baseVw {
       'click .js-saveConfirmCancel': 'onClickSaveConfirmCancel',
       'change #serverConfigServerIp': 'onChangeServerIp',
       'change [name=useTor]': 'onChangeUseTor',
-      'change [name=useSSH]': 'onChangeUseSSH'
+      'change [name=useSSH]': 'onChangeUseSSH',
+      'click .js-select-key': 'onClickSelectKey',
+      'change [name=sshKeyFileSelector]': 'onChangeSSHKey'
     };
   }
 
@@ -138,7 +140,15 @@ export default class extends baseVw {
     this.getCachedEl('.js-sshDetails')
       .toggleClass('hide', !e.target.checked);
   }
+
+  onClickSelectKey(e) {
+    this.getCachedEl("#serverConfigKeyfileChooser").click();
+  }
   
+  onChangeSSHKey(e) {
+    this.getCachedEl("#serverConfigKeyfile")[0].value = e.target.files[0].path;
+  }
+
   save() {
     const formData = this.getFormData(this.$formFields);
     this.model.set({

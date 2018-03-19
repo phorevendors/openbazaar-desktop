@@ -167,7 +167,7 @@
           <label><%= ob.polyT('connectionManagement.configurationForm.sshPasswordLabel') %></label>
         </div>
         <div class="col9">
-          <input type="text" class="clrBr clrSh2" name="sshPassword" id="serverConfigPassword" value="<%= ob.sshPassword %>" placeholder="<%= ob.polyT('connectionManagement.configurationForm.sshPasswordPlaceholder') %>">
+          <input type="password" class="clrBr clrSh2" name="sshPassword" id="serverConfigPassword" value="<%= ob.sshPassword %>" placeholder="<%= ob.polyT('connectionManagement.configurationForm.sshPasswordPlaceholder') %>">
         </div>
       </div>
       <div class="flexRow">
@@ -175,7 +175,15 @@
           <label><%= ob.polyT('connectionManagement.configurationForm.sshKeyfileLabel') %></label>
         </div>
         <div class="col9">
-          <input type="text" class="clrBr clrSh2" name="sshKeyFile" id="serverConfigKeyfile" value="<%= ob.sshKeyfile %>" placeholder="<%= ob.polyT('connectionManagement.configurationForm.sshKeyfilePlaceholder') %>">
+          <div class="flexRow">
+            <div class="col9">
+              <input type="text" class="clrBr clrSh2" name="sshKeyFile" id="serverConfigKeyfile" value="<%= ob.sshKeyfile %>"/>
+            </div>
+            <div class="col3">
+              <input type="file" class="choose-file" name="sshKeyFileSelector" value="<%= ob.sshKeyfile %>" id="serverConfigKeyfileChooser" hidden>
+              <a class="btn clrP clrBr clrSh2 center-button-with-input js-select-key">Select key</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

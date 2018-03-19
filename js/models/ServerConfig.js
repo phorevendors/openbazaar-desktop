@@ -122,7 +122,7 @@ export default class extends BaseModel {
         addError('sshTunnel', app.polyglot.t('serverConfigModelErrors.invalidSSHHost'));
       }
 
-      if (!attrs.sshPassword) {
+      if (!attrs.sshPassword && !attrs.sshKeyfile) {
         addError('sshTunnel', app.polyglot.t('serverConfigModelErrors.invalidSSHPassword'))
       }
     }
