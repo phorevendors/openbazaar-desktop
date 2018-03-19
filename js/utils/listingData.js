@@ -267,7 +267,7 @@ function createListing(callback, images) {
       },
       shippingOptions,
       metadata: {
-        pricingCurrency: 'USD',
+        pricingCurrency: 'PHR',
       },
     },
   });
