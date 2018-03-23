@@ -1190,9 +1190,9 @@
       "note3": "*Les frais de service de modération ne s'appliquent qu'après un litige.",
       "note4": "Une fois que vous avez payé, l'interface peut prendre un certain temps pour s'actualiser.",
       "btnConfirmedPay": "Oui, payer",
-      "altcoinLink": "Vous pouvez toujours remplir votre portefeuille OB avec altcoins.",
+      "altcoinLink": "Vous pouvez toujours remplir votre portefeuille PM avec altcoins.",
       "walletNote": "<b>Les portefeuilles externes</b> qui ne prennent pas en charge Segregated Witness peuvent ne pas être en mesure de payer les transactions.",
-      "walletLink": "Vous pouvez envoyer des fonds à votre portefeuille OB à la place.",
+      "walletLink": "Vous pouvez envoyer des fonds à votre portefeuille PM à la place.",
       "feeNote": "<b>N'oubliez pas de couvrir les frais</b> lorsque vous envoyez des fonds à votre portefeuille OpenBazaar."
     },
     "completeSection": {

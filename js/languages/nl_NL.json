@@ -1190,9 +1190,9 @@
       "note3": "De moderator service toeslag is alleen van toepassing als een geschil wordt geopend.",
       "note4": "Als u heeft betaald, duurt het even voor het scherm ververst wordt.",
       "btnConfirmedPay": "Ja, Betaal",
-      "altcoinLink": "You can still fund your OB wallet with altcoins.",
+      "altcoinLink": "You can still fund your PM wallet with altcoins.",
       "walletNote": "<b>External wallets</b> that don't support Segregated Witness may not be able to pay for transactions.",
-      "walletLink": "You can send funds to your OB wallet instead.",
+      "walletLink": "You can send funds to your PM wallet instead.",
       "feeNote": "<b>Remember to cover any fees</b> when you send funds to your OpenBazaar wallet."
     },
     "completeSection": {

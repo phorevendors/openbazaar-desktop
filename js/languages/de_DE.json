@@ -1190,9 +1190,9 @@
       "note3": "* Die Servicegebühr für den Moderator gilt nur, falls ein Konflikt geöffnet wird. ",
       "note4": "Wenn Sie gezahlt haben kann es einen kurzen Augenblick dauern, bis sich die Anzeige aktualisiert.",
       "btnConfirmedPay": "Ja, bezahlen",
-      "altcoinLink": "Sie können Ihre OB-Wallet immer noch mit Altcoins finanzieren.",
+      "altcoinLink": "Sie können Ihre PM-Wallet immer noch mit Altcoins finanzieren.",
       "walletNote": "<b>Externe Wallets</b>, die Segregated Witness nicht unterstützen, können möglicherweise nicht für Transaktionen zahlen.",
-      "walletLink": "Sie können Gelder stattdessen an Ihre OB-Wallet senden.",
+      "walletLink": "Sie können Gelder stattdessen an Ihre PM-Wallet senden.",
       "feeNote": "<b>Stellen Sie sicher Gebühren abzudecken</b>, wenn Sie Gelder an Ihre OpenBazaar-Wallet senden. "
     },
     "completeSection": {

@@ -40,7 +40,7 @@ export function handleLinks() {
     link.setAttribute('href', href);
 
     if (link.protocol !== location.protocol || openExternally) {
-      if (link.protocol === 'ob:' && !openExternally) {
+      if (link.protocol === 'pm:' && !openExternally) {
         Backbone.history.navigate(href.slice(5), true);
       } else {
         // external link

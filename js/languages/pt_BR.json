@@ -1190,9 +1190,9 @@
       "note3": "*A taxa do serviço de moderação só será cobrada se uma disputa for aberta.",
       "note4": "A tela pode demorar um pouco para atualizar após o pagamento ser realizado.",
       "btnConfirmedPay": "Sim, Pagar",
-      "altcoinLink": "Você ainda pode transferir fundos para a sua carteira OB com altcoins.",
+      "altcoinLink": "Você ainda pode transferir fundos para a sua carteira PM com altcoins.",
       "walletNote": "<b>Carteiras externas</b> sem suporte ao Segregated Witness não conseguirão realizar pagamentos.",
-      "walletLink": "Enquanto isso, você pode fazer um depósito para a sua carteira do OB.",
+      "walletLink": "Enquanto isso, você pode fazer um depósito para a sua carteira do PM.",
       "feeNote": "<b>Lembre-se de contabilizar as taxas</b> quando você enviar fundos para a sua carteira do OpenBazaar."
     },
     "completeSection": {

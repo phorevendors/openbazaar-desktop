@@ -1190,9 +1190,9 @@
       "note3": "* لا تنطبق رسوم خدمة المشرف إلا إذا تم فتح نزاع.",
       "note4": "بمجرد الدفع، قد يستغرق الأمر قليلا لتحديث الواجهة.",
       "btnConfirmedPay": "نعم, ادفع",
-      "altcoinLink": "لا يزال بإمكانك تمويل محفظة أوبن بازار OB الخاصة بك بعملة altcoins..",
+      "altcoinLink": "لا يزال بإمكانك تمويل محفظة أوبن بازار PM الخاصة بك بعملة altcoins..",
       "walletNote": "<b>External wallets</b> that don't support Segregated Witness may not be able to pay for transactions.",
-      "walletLink": "You can send funds to your OB wallet instead.",
+      "walletLink": "You can send funds to your PM wallet instead.",
       "feeNote": "<b>Remember to cover any fees</b> when you send funds to your OpenBazaar wallet."
     },
     "completeSection": {
