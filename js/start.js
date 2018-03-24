@@ -431,7 +431,6 @@ function start() {
         });
 
         chatConvos.fetch();
-        $('#chatCloseBtn').on('click', () => (app.chat.close()));
 
         getChatContainer()
             .on('mouseenter', () => getBody().addClass('chatHover'))
