@@ -82,9 +82,3 @@ window.onblur = () => {
 window.onfocus = () => {
   document.documentElement.classList.remove('window-blurred');
 };
-
-
-
-setTimeout(function(){ 
-  $("#chatCloseBtn").prependTo("#chatContainer .chat");
-}, 500);
